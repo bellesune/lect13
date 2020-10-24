@@ -15,7 +15,7 @@ jobs:
           command: python ./chatbot_test.py
           name: ChatbotTest
           
-      -run:
+      - run:
           command: python ./hw13_test.py
           name: HW13 test
 
