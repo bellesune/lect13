@@ -12,3 +12,10 @@ def my_func(num_iters, initial, second):
             return "counter is 10"
         else:
             return "initial is {}".format(initial)
+
+
+# print(my_func(0,1,2))
+# print(my_func(3,1,2))
+# print(my_func(3,0,2))
+
+# print(my_func(-2,-1100))
