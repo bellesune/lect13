@@ -39,16 +39,16 @@ class SplitTestCase(unittest.TestCase):
             },
         ]
          
-        self.failure_test_params = [
-            {
-                KEY_ITERATION: "",
-                KEY_INITIAL: 0,
-                KEY_SECOND: 2,
-                KEY_EXPECTED: {
-                    KEY_OUTPUT: "Don't iterate",
-                }
-            },
-        ]
+        # self.failure_test_params = [
+        #     {
+        #         KEY_ITERATION: "",
+        #         KEY_INITIAL: 0,
+        #         KEY_SECOND: 2,
+        #         KEY_EXPECTED: {
+        #             KEY_OUTPUT: "",
+        #         }
+        #     },
+        # ]
 
     def test_split_success(self):
         for test in self.success_test_params:
@@ -57,12 +57,12 @@ class SplitTestCase(unittest.TestCase):
              
             self.assertEqual(response, expected[KEY_OUTPUT])
             
-    def est_split_failure(self):
-        for test in self.failure_test_params:
-            response = hw13.my_func(test[KEY_ITERATION], test[KEY_INITIAL], test[KEY_SECOND])
-            expected = test[KEY_EXPECTED]
+    # def est_split_failure(self):
+    #     for test in self.failure_test_params:
+    #         response = hw13.my_func(test[KEY_ITERATION], test[KEY_INITIAL], test[KEY_SECOND])
+    #         expected = test[KEY_EXPECTED]
         
-            self.assertNotEqual(response, expected)
+    #         self.assertNotEqual(response, expected)
             
 
 if __name__ == '__main__':
